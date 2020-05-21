@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include robins_erpnext_extensions *.css
+recursive-include robins_erpnext_extensions *.csv
+recursive-include robins_erpnext_extensions *.html
+recursive-include robins_erpnext_extensions *.ico
+recursive-include robins_erpnext_extensions *.js
+recursive-include robins_erpnext_extensions *.json
+recursive-include robins_erpnext_extensions *.md
+recursive-include robins_erpnext_extensions *.png
+recursive-include robins_erpnext_extensions *.py
+recursive-include robins_erpnext_extensions *.svg
+recursive-include robins_erpnext_extensions *.txt
+recursive-exclude robins_erpnext_extensions *.pyc

@@ -1,0 +1,36 @@
+{
+ "creation": "2020-02-02 09:35:14.919317",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "link",
+  "info"
+ ],
+ "fields": [
+  {
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link"
+  },
+  {
+   "columns": 2,
+   "fieldname": "info",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Info"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-21 14:44:39.874962",
+ "modified_by": "email@robinrosenstock.com",
+ "module": "Robins Erpnext Extensions",
+ "name": "Social Table",
+ "owner": "robin.rosenstock@t-online.de",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

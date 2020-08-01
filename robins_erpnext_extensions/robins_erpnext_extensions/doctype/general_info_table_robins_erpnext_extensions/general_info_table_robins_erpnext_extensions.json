@@ -4,8 +4,9 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "info",
-  "link"
+  "bezeichnung",
+  "link",
+  "info"
  ],
  "fields": [
   {
@@ -16,6 +17,12 @@
   },
   {
    "columns": 2,
+   "fieldname": "bezeichnung",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bezeichnung"
+  },
+  {
    "fieldname": "info",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -23,7 +30,7 @@
   }
  ],
  "istable": 1,
- "modified": "2020-08-01 14:15:48.910296",
+ "modified": "2020-08-01 15:04:51.508207",
  "modified_by": "email@robinrosenstock.com",
  "module": "Robins Erpnext Extensions",
  "name": "General_info_table_robins_erpnext_extensions",

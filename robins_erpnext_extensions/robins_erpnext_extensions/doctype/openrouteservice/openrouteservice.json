@@ -1,0 +1,55 @@
+{
+ "creation": "2020-09-05 21:04:53.555901",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "api_openrouteservice",
+  "address_line1",
+  "city",
+  "pincode"
+ ],
+ "fields": [
+  {
+   "fieldname": "address_line1",
+   "fieldtype": "Data",
+   "label": "Home Address line"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "Home City"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Home Postal Code"
+  },
+  {
+   "fieldname": "api_openrouteservice",
+   "fieldtype": "Data",
+   "label": "API Open Route Service "
+  }
+ ],
+ "issingle": 1,
+ "modified": "2020-09-05 21:32:38.955143",
+ "modified_by": "email@robinrosenstock.com",
+ "module": "Robins Erpnext Extensions",
+ "name": "OpenRouteService",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

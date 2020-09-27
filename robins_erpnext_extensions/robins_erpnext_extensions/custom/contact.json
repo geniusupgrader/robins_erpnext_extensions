@@ -56,6 +56,30 @@
  ],
  "custom_perms": [],
  "doctype": "Contact",
- "property_setters": [],
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2020-09-17 19:16:55.794374",
+   "default_value": null,
+   "doc_type": "Contact",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "last_name",
+   "idx": 0,
+   "modified": "2020-09-17 19:16:55.794374",
+   "modified_by": "email@robinrosenstock.com",
+   "name": "Contact-last_name-in_global_search",
+   "owner": "email@robinrosenstock.com",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "in_global_search",
+   "property_type": "Check",
+   "value": "1"
+  }
+ ],
  "sync_on_migrate": 1
 }

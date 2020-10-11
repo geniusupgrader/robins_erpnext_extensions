@@ -24,7 +24,7 @@ def get_distance_and_duration(destination_address):
 
 	doc = frappe.get_doc('OpenRouteService')
 	client = ors.Client(key=doc.api_openrouteservice)
-	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city
+	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "doc.country
 
 	home_address_location = client.pelias_search(text=home_address)
 	home_address_coordinates = home_address_location["features"][0]["geometry"]["coordinates"]

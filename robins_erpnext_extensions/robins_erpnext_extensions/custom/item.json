@@ -35,7 +35,7 @@
    "modified_by": "Administrator",
    "name": "Item-kategorie",
    "no_copy": 0,
-   "options": "ItemGroupWebsiteLink",
+   "options": "ItemGroupWebsiteLink_robins_erpnext_extensions",
    "owner": "Administrator",
    "parent": null,
    "parentfield": null,

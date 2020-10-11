@@ -23,7 +23,7 @@ class OpenRouteService_robins_erpnext_extensions(Document):
 def get_distance_and_duration(destination_address):
 
 	doc = frappe.get_doc('OpenRouteService_robins_erpnext_extensions')
-	client = ors.Client(key=doc.api_openrouteservice_robins_erpnext_extensions)
+	client = ors.Client(key=doc.api_openrouteservice)
 	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "+doc.country
 
 	home_address_location = client.pelias_search(text=home_address)
@@ -60,7 +60,7 @@ def long_job(arg1, arg2):
 	frappe.publish_realtime('msgprint', 'Starting long job...')
 
 	doc = frappe.get_doc('OpenRouteService_robins_erpnext_extensions')
-	client = ors.Client(key=doc.api_openrouteservice_robins_erpnext_extensions)
+	client = ors.Client(key=doc.api_openrouteservice)
 	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "+doc.country
 
 	home_address_location = client.pelias_search(text=home_address)

@@ -35,7 +35,7 @@
    "modified_by": "Administrator",
    "name": "Lead-lead_type",
    "no_copy": 0,
-   "options": "Lead Type",
+   "options": "Lead_Type_robins_erpnext_extensions",
    "owner": "Administrator",
    "parent": null,
    "parentfield": null,

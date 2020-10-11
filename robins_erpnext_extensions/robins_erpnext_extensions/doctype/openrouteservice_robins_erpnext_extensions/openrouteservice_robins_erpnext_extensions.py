@@ -10,7 +10,7 @@ import openrouteservice_robins_erpnext_extensions as ors
 import time
 
 
-class OpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions(Document):
+class OpenRouteService_robins_erpnext_extensions(Document):
 
 
 	def validate(self):
@@ -22,7 +22,7 @@ class OpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions(Docum
 @frappe.whitelist()
 def get_distance_and_duration(destination_address):
 
-	doc = frappe.get_doc('OpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions')
+	doc = frappe.get_doc('OpenRouteService_robins_erpnext_extensions')
 	client = ors.Client(key=doc.api_openrouteservice_robins_erpnext_extensions)
 	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "+doc.country
 
@@ -59,7 +59,7 @@ def long_job(arg1, arg2):
 
 	frappe.publish_realtime('msgprint', 'Starting long job...')
 
-	doc = frappe.get_doc('OpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions')
+	doc = frappe.get_doc('OpenRouteService_robins_erpnext_extensions')
 	client = ors.Client(key=doc.api_openrouteservice_robins_erpnext_extensions)
 	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "+doc.country
 

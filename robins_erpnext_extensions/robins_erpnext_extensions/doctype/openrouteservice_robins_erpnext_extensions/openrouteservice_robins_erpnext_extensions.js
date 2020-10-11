@@ -1,13 +1,13 @@
 // Copyright (c) 2020, Robin Rosenstock and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('OpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions', {
+frappe.ui.form.on('OpenRouteService_robins_erpnext_extensions', {
 	// refresh: function(frm) {
 
 	// }
 });
 
-frappe.ui.form.on("OpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions", {
+frappe.ui.form.on("OpenRouteService_robins_erpnext_extensions", {
 	refresh: function(frm) {
 		frm.add_custom_button(__("Update All Adresses"), function() {
 			

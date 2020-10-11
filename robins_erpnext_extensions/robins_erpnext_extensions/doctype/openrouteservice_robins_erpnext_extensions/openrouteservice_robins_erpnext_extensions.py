@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
 from frappe import enqueue
-import openrouteservice_robins_erpnext_extensions as ors
+import openrouteservice as ors
 import time
 
 

@@ -20,7 +20,7 @@
  "modified": "2020-05-30 13:00:13.305436",
  "modified_by": "email@robinrosenstock.com",
  "module": "Robins Erpnext Extensions",
- "name": "WebGroup",
+ "name": "WebGroup_robins_erpnext_extensions",
  "owner": "Administrator",
  "permissions": [
   {

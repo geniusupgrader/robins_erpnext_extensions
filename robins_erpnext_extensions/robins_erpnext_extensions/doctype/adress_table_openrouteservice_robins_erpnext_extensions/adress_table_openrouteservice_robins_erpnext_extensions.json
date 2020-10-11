@@ -1,0 +1,28 @@
+{
+ "creation": "2020-10-11 11:55:17.929576",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-10-11 11:55:17.929576",
+ "modified_by": "Administrator",
+ "module": "Robins Erpnext Extensions",
+ "name": "Adress_table_openrouteservice_robins_erpnext_extensions",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -6,11 +6,11 @@ from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
 from frappe import enqueue
-import openrouteservice as ors
+import openrouteservice_robins_erpnext_extensions as ors
 import time
 
 
-class OpenRouteService(Document):
+class OpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions(Document):
 
 
 	def validate(self):
@@ -22,8 +22,8 @@ class OpenRouteService(Document):
 @frappe.whitelist()
 def get_distance_and_duration(destination_address):
 
-	doc = frappe.get_doc('OpenRouteService')
-	client = ors.Client(key=doc.api_openrouteservice)
+	doc = frappe.get_doc('OpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions')
+	client = ors.Client(key=doc.api_openrouteservice_robins_erpnext_extensions)
 	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "+doc.country
 
 	home_address_location = client.pelias_search(text=home_address)
@@ -59,8 +59,8 @@ def long_job(arg1, arg2):
 
 	frappe.publish_realtime('msgprint', 'Starting long job...')
 
-	doc = frappe.get_doc('OpenRouteService')
-	client = ors.Client(key=doc.api_openrouteservice)
+	doc = frappe.get_doc('OpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions')
+	client = ors.Client(key=doc.api_openrouteservice_robins_erpnext_extensions)
 	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "+doc.country
 
 	home_address_location = client.pelias_search(text=home_address)

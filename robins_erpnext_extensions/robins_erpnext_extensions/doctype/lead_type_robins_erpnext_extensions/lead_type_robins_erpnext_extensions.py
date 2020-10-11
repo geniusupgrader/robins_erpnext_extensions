@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class LeadType(Document):
+class Lead_Type_robins_erpnext_extensions(Document):
 	pass

@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class ItemGroupWebsiteLink(Document):
+class Adress_table_openrouteservice_robins_erpnext_extensions(Document):
 	pass

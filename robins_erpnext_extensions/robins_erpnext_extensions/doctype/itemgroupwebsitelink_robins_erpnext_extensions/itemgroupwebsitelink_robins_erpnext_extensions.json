@@ -12,15 +12,15 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Category",
-   "options": "WebGroup",
+   "options": "WebGroup_robins_erpnext_extensions",
    "reqd": 1
   }
  ],
  "istable": 1,
- "modified": "2020-05-30 14:18:09.303251",
+ "modified": "2020-10-11 11:53:36.861573",
  "modified_by": "Administrator",
  "module": "Robins Erpnext Extensions",
- "name": "ItemGroupWebsiteLink",
+ "name": "ItemGroupWebsiteLink_robins_erpnext_extensions",
  "owner": "Administrator",
  "permissions": [],
  "quick_entry": 1,

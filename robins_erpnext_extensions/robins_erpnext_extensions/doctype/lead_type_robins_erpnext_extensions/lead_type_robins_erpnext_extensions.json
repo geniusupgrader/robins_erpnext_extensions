@@ -19,7 +19,7 @@
  "modified": "2020-09-26 12:57:38.500291",
  "modified_by": "email@robinrosenstock.com",
  "module": "Robins Erpnext Extensions",
- "name": "Lead Type",
+ "name": "Lead_Type_robins_erpnext_extensions",
  "owner": "Administrator",
  "permissions": [
   {

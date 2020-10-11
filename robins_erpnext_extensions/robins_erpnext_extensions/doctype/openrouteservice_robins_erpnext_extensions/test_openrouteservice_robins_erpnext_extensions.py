@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 import unittest
 
-class TestLeadType(unittest.TestCase):
+class TestOpenRouteService_robins_erpnext_extensions_robins_erpnext_extensions(unittest.TestCase):
 	pass

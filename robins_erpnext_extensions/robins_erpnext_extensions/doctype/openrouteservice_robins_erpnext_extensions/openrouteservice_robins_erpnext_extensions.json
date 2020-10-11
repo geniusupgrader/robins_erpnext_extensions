@@ -8,7 +8,8 @@
   "address_line1",
   "city",
   "pincode",
-  "country"
+  "country",
+  "address_table"
  ],
  "fields": [
   {
@@ -36,13 +37,19 @@
    "fieldtype": "Link",
    "label": "Home Country",
    "options": "Country"
+  },
+  {
+   "fieldname": "address_table",
+   "fieldtype": "Table",
+   "label": "Adress Table",
+   "options": "Adress_table_openrouteservice_robins_erpnext_extensions"
   }
  ],
  "issingle": 1,
- "modified": "2020-10-11 11:40:23.786699",
- "modified_by": "email@robinrosenstock.com",
+ "modified": "2020-10-11 11:56:23.233037",
+ "modified_by": "Administrator",
  "module": "Robins Erpnext Extensions",
- "name": "OpenRouteService",
+ "name": "OpenRouteService_robins_erpnext_extensions",
  "owner": "Administrator",
  "permissions": [
   {

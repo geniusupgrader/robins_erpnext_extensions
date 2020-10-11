@@ -24,7 +24,7 @@ def get_distance_and_duration(destination_address):
 
 	doc = frappe.get_doc('OpenRouteService')
 	client = ors.Client(key=doc.api_openrouteservice)
-	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "doc.country
+	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "+doc.country
 
 	home_address_location = client.pelias_search(text=home_address)
 	home_address_coordinates = home_address_location["features"][0]["geometry"]["coordinates"]
@@ -35,6 +35,7 @@ def get_distance_and_duration(destination_address):
 	coordinates = [home_address_coordinates, destination_address_coordinates]
 
 	route = client.directions(coordinates=coordinates, profile='driving-car', geometry_simplify=True, instructions=False, geometry=False)
+
 
 	distance_and_duration = route.get("routes")[0].get("summary")
 	distance = distance_and_duration["distance"]
@@ -60,7 +61,7 @@ def long_job(arg1, arg2):
 
 	doc = frappe.get_doc('OpenRouteService')
 	client = ors.Client(key=doc.api_openrouteservice)
-	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city
+	home_address = doc.address_line1+", "+doc.pincode+" "+doc.city+", "+doc.country
 
 	home_address_location = client.pelias_search(text=home_address)
 	home_address_coordinates = home_address_location["features"][0]["geometry"]["coordinates"]
@@ -78,6 +79,7 @@ def long_job(arg1, arg2):
 		address_line1 = frappe.db.get_value("Address", address_id, "address_line1")
 		pincode = frappe.db.get_value("Address", address_id, "pincode")
 		city = frappe.db.get_value("Address", address_id, "city")
+		country = frappe.db.get_value("Address", address_id, "country")
 
 		destination_address = str(address_line1)+", "+str(pincode)+" "+str(city)
 

@@ -2,12 +2,14 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:name1",
- "creation": "2020-05-21 15:28:22.562430",
+ "creation": "2020-12-29 22:34:53.408956",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "name1",
+  "link",
+  "wishlist"
  ],
  "fields": [
   {
@@ -16,12 +18,23 @@
    "in_list_view": 1,
    "label": "Name",
    "unique": 1
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "label": "Link"
+  },
+  {
+   "fieldname": "wishlist",
+   "fieldtype": "Link",
+   "label": "Wishlist",
+   "options": "Wishlist_robins_erpnext_extensions"
   }
  ],
- "modified": "2020-12-29 15:44:01.378076",
- "modified_by": "email@robinrosenstock.com",
+ "modified": "2020-12-29 22:36:26.960736",
+ "modified_by": "Administrator",
  "module": "Robins Erpnext Extensions",
- "name": "Lead_Type_robins_erpnext_extensions",
+ "name": "Wishlist_entries_robins_erpnext_extensions",
  "owner": "Administrator",
  "permissions": [
   {

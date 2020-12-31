@@ -7,7 +7,7 @@ def get_data():
 		{
 			"module_name": "Robins Erpnext Extensions",
 			"color": "grey",
-			"icon": "octicon octicon-file-directory",
+			"icon": "octicon octicon-star",
 			"type": "module",
 			"label": _("Robins Erpnext Extensions")
 		}

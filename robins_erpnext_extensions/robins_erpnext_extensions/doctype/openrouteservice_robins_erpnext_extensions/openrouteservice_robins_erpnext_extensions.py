@@ -57,7 +57,7 @@ def update_all():
 @frappe.whitelist()
 def long_job(arg1, arg2):
 
-	frappe.publish_realtime('msgprint', 'Starting long job...')
+	frappe.publish_realtime('msgprint', 'Updating all adresses...')
 
 	doc = frappe.get_doc('OpenRouteService_robins_erpnext_extensions')
 	client = ors.Client(key=doc.api_openrouteservice)
@@ -74,22 +74,22 @@ def long_job(arg1, arg2):
 		# strip it from
 		address_id = i[0]
 
-		print(address_id)
+		# print(address_id)
 
 		address_line1 = frappe.db.get_value("Address", address_id, "address_line1")
 		pincode = frappe.db.get_value("Address", address_id, "pincode")
 		city = frappe.db.get_value("Address", address_id, "city")
-		country = frappe.db.get_value("Address", address_id, "country")
+		# country = frappe.db.get_value("Address", address_id, "country")
 
 		destination_address = str(address_line1)+", "+str(pincode)+" "+str(city)
 
-		print(destination_address)
+		# print(destination_address)
 
 		destination_address_location = client.pelias_search(text=destination_address)
 
 		destination_address_coordinates = destination_address_location["features"][0]["geometry"]["coordinates"]
 
-		print(destination_address_coordinates)
+		# print(destination_address_coordinates)
 
 		coordinates = [home_address_coordinates, destination_address_coordinates]
 
@@ -98,7 +98,7 @@ def long_job(arg1, arg2):
 
 		distance_and_duration = route.get("routes")[0].get("summary")
 
-		print(distance_and_duration)
+		# print(distance_and_duration)
 
 		try:
 			distance = distance_and_duration["distance"]
@@ -114,12 +114,8 @@ def long_job(arg1, arg2):
 		frappe.db.set_value("Address", address_id, "distance", distance)
 		frappe.db.set_value("Address", address_id, "duration_from_home_address_in_minutes", duration)
 
+		# because of api limits:
 		time.sleep(1.6)
 
 
-
-	frappe.publish_realtime('msgprint', 'Ending long job...')
-
-
-
-	return distance, duration
+	frappe.publish_realtime('msgprint', 'Finished updating all addresses')

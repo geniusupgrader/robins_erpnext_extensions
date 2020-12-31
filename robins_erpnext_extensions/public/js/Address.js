@@ -12,7 +12,6 @@ frappe.ui.form.on('Address', {
                 console.log(r)
                 frm.doc.distance = r.message[0]
                 frm.doc.duration_from_home_address_in_minutes = r.message[1]
-                frm.refresh()
             }
         })
 		

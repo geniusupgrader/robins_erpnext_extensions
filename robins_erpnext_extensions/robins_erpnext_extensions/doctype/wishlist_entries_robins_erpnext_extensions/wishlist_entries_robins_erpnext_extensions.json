@@ -21,8 +21,9 @@
   },
   {
    "fieldname": "link",
-   "fieldtype": "Data",
-   "label": "Link"
+   "fieldtype": "Link",
+   "label": "Link",
+   "options": "Website_Link_media_management"
   },
   {
    "fieldname": "wishlist",
@@ -31,8 +32,8 @@
    "options": "Wishlist_robins_erpnext_extensions"
   }
  ],
- "modified": "2020-12-29 22:36:26.960736",
- "modified_by": "Administrator",
+ "modified": "2021-01-03 16:41:10.572021",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Robins Erpnext Extensions",
  "name": "Wishlist_entries_robins_erpnext_extensions",
  "owner": "Administrator",

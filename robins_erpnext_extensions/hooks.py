@@ -29,7 +29,8 @@ app_license = "MIT"
 doctype_js = {
     "Vehicle Log" : "public/js/Vehicle_Log.js",
     "Timesheet" : "public/js/Timesheet.js",
-    "Address" : "public/js/Address.js"
+    "Address" : "public/js/Address.js",
+    "Communication" : "public/js/Communication.js"
 }
 
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
